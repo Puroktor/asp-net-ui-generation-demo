@@ -1,0 +1,225 @@
+{
+  "components": [
+    {
+      "name": "My custom contoller",
+      "endpoints": [
+        {
+          "name": "CreateEntity",
+          "mapping": "api/controller1/entity",
+          "requestType": "POST",
+          "requestBody": {
+            "entityName": "dto1",
+            "fields": [
+              {
+                "displayName": "ID description",
+                "submitName": "Id",
+                "fieldType": "NUMBER",
+                "required": true
+              },
+              {
+                "submitToDisplayValues": {
+                  "FIRST": "FIRST",
+                  "SECOND": "SECOND",
+                  "THIRD": "THIRD"
+                },
+                "displayName": "Status",
+                "submitName": "Status",
+                "fieldType": "ENUM",
+                "required": false
+              },
+              {
+                "element": {
+                  "fieldType": "TEXT",
+                  "required": true
+                },
+                "displayName": "TextList",
+                "submitName": "TextList",
+                "fieldType": "LIST",
+                "required": true
+              },
+              {
+                "displayName": "Flag description",
+                "submitName": "Flag",
+                "fieldType": "BOOL",
+                "required": true
+              },
+              {
+                "innerFields": [
+                  {
+                    "displayName": "Some description",
+                    "submitName": "Description1",
+                    "fieldType": "TEXT",
+                    "required": true
+                  },
+                  {
+                    "displayName": "Description2",
+                    "submitName": "Description2",
+                    "fieldType": "TEXT",
+                    "required": true
+                  }
+                ],
+                "displayName": "Inner DTO",
+                "submitName": "TestDto2",
+                "fieldType": "CLASS",
+                "required": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "CreateEntity",
+          "mapping": "api/controller1/entity",
+          "requestType": "PUT",
+          "requestBody": {
+            "entityName": "dto1",
+            "fields": [
+              {
+                "displayName": "ID description",
+                "submitName": "Id",
+                "fieldType": "NUMBER",
+                "required": true
+              },
+              {
+                "submitToDisplayValues": {
+                  "FIRST": "FIRST",
+                  "SECOND": "SECOND",
+                  "THIRD": "THIRD"
+                },
+                "displayName": "Status",
+                "submitName": "Status",
+                "fieldType": "ENUM",
+                "required": false
+              },
+              {
+                "element": {
+                  "fieldType": "TEXT",
+                  "required": true
+                },
+                "displayName": "TextList",
+                "submitName": "TextList",
+                "fieldType": "LIST",
+                "required": true
+              },
+              {
+                "displayName": "Flag description",
+                "submitName": "Flag",
+                "fieldType": "BOOL",
+                "required": true
+              },
+              {
+                "innerFields": [
+                  {
+                    "displayName": "Some description",
+                    "submitName": "Description1",
+                    "fieldType": "TEXT",
+                    "required": true
+                  },
+                  {
+                    "displayName": "Description2",
+                    "submitName": "Description2",
+                    "fieldType": "TEXT",
+                    "required": true
+                  }
+                ],
+                "displayName": "Inner DTO",
+                "submitName": "TestDto2",
+                "fieldType": "CLASS",
+                "required": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Retrieve entity",
+          "mapping": "api/controller1/entity",
+          "requestType": "GET",
+          "queryParams": [
+            {
+              "displayName": "id",
+              "submitName": "id",
+              "fieldType": "NUMBER",
+              "required": true
+            }
+          ],
+          "responseBody": [
+            {
+              "displayName": "ID description",
+              "fieldType": "NUMBER",
+              "required": true
+            },
+            {
+              "submitToDisplayValues": {
+                "FIRST": "FIRST",
+                "SECOND": "SECOND",
+                "THIRD": "THIRD"
+              },
+              "displayName": "Status",
+              "fieldType": "ENUM",
+              "required": false
+            },
+            {
+              "element": {
+                "fieldType": "TEXT",
+                "required": true
+              },
+              "displayName": "TextList",
+              "fieldType": "LIST",
+              "required": true
+            },
+            {
+              "displayName": "Flag description",
+              "fieldType": "BOOL",
+              "required": true
+            },
+            {
+              "innerFields": [
+                {
+                  "displayName": "Some description",
+                  "submitName": "Description1",
+                  "fieldType": "TEXT",
+                  "required": true
+                },
+                {
+                  "displayName": "Description2",
+                  "submitName": "Description2",
+                  "fieldType": "TEXT",
+                  "required": true
+                }
+              ],
+              "displayName": "Inner DTO",
+              "fieldType": "CLASS",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TestController3",
+      "endpoints": [
+        {
+          "name": "Another example method",
+          "mapping": "api/controller3/example/{id}",
+          "requestType": "POST",
+          "pathParams": [
+            {
+              "displayName": "First ID",
+              "submitName": "id",
+              "fieldType": "NUMBER",
+              "required": true
+            }
+          ],
+          "queryParams": [
+            {
+              "displayName": "id2",
+              "submitName": "ID2",
+              "fieldType": "NUMBER",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "baseUrl": "http://localhost:5114"
+}
