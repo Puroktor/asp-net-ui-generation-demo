@@ -12,7 +12,7 @@
             "fields": [
               {
                 "displayName": "ID description",
-                "submitName": "Id",
+                "codeName": "id",
                 "fieldType": "NUMBER",
                 "required": true
               },
@@ -23,7 +23,7 @@
                   "THIRD": "THIRD"
                 },
                 "displayName": "Status",
-                "submitName": "Status",
+                "codeName": "status",
                 "fieldType": "ENUM",
                 "required": false
               },
@@ -33,13 +33,13 @@
                   "required": true
                 },
                 "displayName": "TextList",
-                "submitName": "TextList",
+                "codeName": "textList",
                 "fieldType": "LIST",
                 "required": true
               },
               {
                 "displayName": "Flag description",
-                "submitName": "Flag",
+                "codeName": "flag",
                 "fieldType": "BOOL",
                 "required": true
               },
@@ -47,19 +47,19 @@
                 "innerFields": [
                   {
                     "displayName": "Some description",
-                    "submitName": "Description1",
+                    "codeName": "description1",
                     "fieldType": "TEXT",
                     "required": true
                   },
                   {
                     "displayName": "Description2",
-                    "submitName": "Description2",
+                    "codeName": "description2",
                     "fieldType": "TEXT",
                     "required": true
                   }
                 ],
                 "displayName": "Inner DTO",
-                "submitName": "TestDto2",
+                "codeName": "testDto2",
                 "fieldType": "CLASS",
                 "required": true
               }
@@ -75,7 +75,7 @@
             "fields": [
               {
                 "displayName": "ID description",
-                "submitName": "Id",
+                "codeName": "id",
                 "fieldType": "NUMBER",
                 "required": true
               },
@@ -86,7 +86,7 @@
                   "THIRD": "THIRD"
                 },
                 "displayName": "Status",
-                "submitName": "Status",
+                "codeName": "status",
                 "fieldType": "ENUM",
                 "required": false
               },
@@ -96,13 +96,13 @@
                   "required": true
                 },
                 "displayName": "TextList",
-                "submitName": "TextList",
+                "codeName": "textList",
                 "fieldType": "LIST",
                 "required": true
               },
               {
                 "displayName": "Flag description",
-                "submitName": "Flag",
+                "codeName": "flag",
                 "fieldType": "BOOL",
                 "required": true
               },
@@ -110,19 +110,19 @@
                 "innerFields": [
                   {
                     "displayName": "Some description",
-                    "submitName": "Description1",
+                    "codeName": "description1",
                     "fieldType": "TEXT",
                     "required": true
                   },
                   {
                     "displayName": "Description2",
-                    "submitName": "Description2",
+                    "codeName": "description2",
                     "fieldType": "TEXT",
                     "required": true
                   }
                 ],
                 "displayName": "Inner DTO",
-                "submitName": "TestDto2",
+                "codeName": "testDto2",
                 "fieldType": "CLASS",
                 "required": true
               }
@@ -136,7 +136,7 @@
           "queryParams": [
             {
               "displayName": "id",
-              "submitName": "id",
+              "codeName": "id",
               "fieldType": "NUMBER",
               "required": true
             }
@@ -144,6 +144,7 @@
           "responseBody": [
             {
               "displayName": "ID description",
+              "codeName": "id",
               "fieldType": "NUMBER",
               "required": true
             },
@@ -154,6 +155,7 @@
                 "THIRD": "THIRD"
               },
               "displayName": "Status",
+              "codeName": "status",
               "fieldType": "ENUM",
               "required": false
             },
@@ -163,11 +165,13 @@
                 "required": true
               },
               "displayName": "TextList",
+              "codeName": "textList",
               "fieldType": "LIST",
               "required": true
             },
             {
               "displayName": "Flag description",
+              "codeName": "flag",
               "fieldType": "BOOL",
               "required": true
             },
@@ -175,18 +179,19 @@
               "innerFields": [
                 {
                   "displayName": "Some description",
-                  "submitName": "Description1",
+                  "codeName": "description1",
                   "fieldType": "TEXT",
                   "required": true
                 },
                 {
                   "displayName": "Description2",
-                  "submitName": "Description2",
+                  "codeName": "description2",
                   "fieldType": "TEXT",
                   "required": true
                 }
               ],
               "displayName": "Inner DTO",
+              "codeName": "testDto2",
               "fieldType": "CLASS",
               "required": true
             }
@@ -204,7 +209,7 @@
           "pathParams": [
             {
               "displayName": "First ID",
-              "submitName": "id",
+              "codeName": "id",
               "fieldType": "NUMBER",
               "required": true
             }
@@ -212,7 +217,7 @@
           "queryParams": [
             {
               "displayName": "id2",
-              "submitName": "ID2",
+              "codeName": "ID2",
               "fieldType": "NUMBER",
               "required": true
             }
