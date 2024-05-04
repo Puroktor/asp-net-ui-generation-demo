@@ -5,7 +5,8 @@ namespace DemoProject.Dto
     public class TestDto1
     {
         [DisplayName("ID description")]
-        public required int Id { get; set; }
+        [NumberField(Min = 0, Max = int.MaxValue)]
+        public int Id { get; set; }
         public TestEnum? Status { get; set; }
         public required List<string> TextList { get; set; }
         [DisplayName("Flag description")]

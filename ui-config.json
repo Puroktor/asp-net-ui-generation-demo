@@ -11,6 +11,8 @@
             "entityName": "dto1",
             "fields": [
               {
+                "min": 0,
+                "max": 2147483647,
                 "displayName": "ID description",
                 "codeName": "id",
                 "fieldType": "NUMBER",
@@ -46,6 +48,9 @@
               {
                 "innerFields": [
                   {
+                    "minLength": 5,
+                    "maxLength": 2147483647,
+                    "pattern": "Example.*",
                     "displayName": "Some description",
                     "codeName": "description1",
                     "fieldType": "TEXT",
@@ -74,6 +79,8 @@
             "entityName": "dto1",
             "fields": [
               {
+                "min": 0,
+                "max": 2147483647,
                 "displayName": "ID description",
                 "codeName": "id",
                 "fieldType": "NUMBER",
@@ -109,6 +116,9 @@
               {
                 "innerFields": [
                   {
+                    "minLength": 5,
+                    "maxLength": 2147483647,
+                    "pattern": "Example.*",
                     "displayName": "Some description",
                     "codeName": "description1",
                     "fieldType": "TEXT",
@@ -143,6 +153,8 @@
           ],
           "responseBody": [
             {
+              "min": 0,
+              "max": 2147483647,
               "displayName": "ID description",
               "codeName": "id",
               "fieldType": "NUMBER",
@@ -178,6 +190,9 @@
             {
               "innerFields": [
                 {
+                  "minLength": 5,
+                  "maxLength": 2147483647,
+                  "pattern": "Example.*",
                   "displayName": "Some description",
                   "codeName": "description1",
                   "fieldType": "TEXT",
