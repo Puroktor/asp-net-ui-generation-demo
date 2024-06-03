@@ -24,7 +24,7 @@ namespace DemoProject.Controllers
         public TestDto1 GetEntity(int id)
         {
             TestDto2 testDto2 = new() { Description1 = "Example description 1", Description2 = "Example description 2" };
-            TestDto1 testDto1 = new() { Id = id, Flag = true, Status = TestEnum.SECOND, TextList = ["hi, hello"], TestDto2 = testDto2 };
+            TestDto1 testDto1 = new() { Id = id, Flag = true, Status = TestEnum.SECOND, TextList = ["hi, hello"], CustomDate = "2024/05/25", TestDto2 = testDto2 };
             return testDto1;
         }
     }

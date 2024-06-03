@@ -46,6 +46,13 @@
                 "required": true
               },
               {
+                "dateFormat": "yyyy/MM/dd",
+                "displayName": "Custom Date",
+                "codeName": "customDate",
+                "fieldType": "DATE",
+                "required": true
+              },
+              {
                 "innerFields": [
                   {
                     "minLength": 5,
@@ -111,6 +118,13 @@
                 "displayName": "Flag description",
                 "codeName": "flag",
                 "fieldType": "BOOL",
+                "required": true
+              },
+              {
+                "dateFormat": "yyyy/MM/dd",
+                "displayName": "Custom Date",
+                "codeName": "customDate",
+                "fieldType": "DATE",
                 "required": true
               },
               {
@@ -185,6 +199,13 @@
               "displayName": "Flag description",
               "codeName": "flag",
               "fieldType": "BOOL",
+              "required": true
+            },
+            {
+              "dateFormat": "yyyy/MM/dd",
+              "displayName": "Custom Date",
+              "codeName": "customDate",
+              "fieldType": "DATE",
               "required": true
             },
             {
